@@ -7,55 +7,57 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Profile Generator</h1>
-    <form>
-      <ul>
-        <label for="photo">Select image:</label>
-        <input type="file" id="photo" name="photo" accept="image*" />
-      </ul>
+    <div>
+      <div class="group-box">
+        <div style="margin-bottom: 20px">
+          <h1>Profile Generator</h1>
+          <div class="bubble">Inputs</div>
+        </div>
 
-      <ul>
-        <label for="name">Name: </label>
-        <input id="name" name="name" required type="text" />
-      </ul>
+        <form action="updatePage()">
+          <label for="form-photo">Profile Picture:</label>
+          <div class="mock-bg">
+            <input
+              style="margin: 0"
+              class="no-border"
+              type="file"
+              id="form-photo"
+              name="form-photo"
+              accept="image*"
+            />
+          </div>
 
-      <ul>
-        <label for="title">Title: </label>
-        <input id="title" name="title" type="text" />
-      </ul>
+          <label for="form-name">Name: </label>
+          <input id="form-name" name="form-name" required type="text" />
 
-      <ul>
-        <label for="email">Email: </label>
-        <input id="email" name="email" required type="email" />
-      </ul>
+          <label for="form-title">Title: </label>
+          <input id="form-title" name="form-title" type="text" />
 
-      <ul>
-        <label for="phone">Phone: </label>
-        <input id="phone" name="phone" required type="tel" />
-      </ul>
+          <label for="form-email">Email: </label>
+          <input id="form-email" name="form-email" required type="email" />
 
-      <ul>
-        <label for="fun-fact">Fun Fact: </label>
-        <input id="fun-fact" name="fun-fact" type="text" />
-      </ul>
+          <label for="form-phone">Phone: </label>
+          <input id="form-phone" name="form-phone" required type="tel" />
 
-      <ul>
-        <label>School: </label>
-        <!-- TODO: set a default value of the three choices -->
-        <input type="radio" id="kccs" name="school" value="KCCS" />
-        <label for="kccs">KCCS</label>
+          <label for="form-fun-fact">Fun Fact: </label>
+          <input id="form-fun-fact" name="form-fun-fact" type="text" />
 
-        <input type="radio" id="camd" name="school" value="CAMD" />
-        <label for="camd">CAMD</label>
+          <label for="form-school">School: </label>
+          <select id="form-school" name="form-school">
+            <option value="kccs">KCCS (Khoury)</option>
+            <option value="camd">CAMD</option>
+            <option value="dmsb">DMSB (D'amore McKim)</option>
+            <option value="coe">COE</option>
+          </select>
 
-        <input type="radio" id="dmsb" name="school" value="DMSB" />
-        <label for="dmsb">DMSB</label>
-      </ul>
+          <input type="submit" value="Generate!">
+        </form>
+      </div>
 
-      <ul>
-         <input type="submit" id="submit" name="submit" value="Generate!">
-      </ul>
-    </form>
+      <div class="group-box">
+        <img id="photo" name="photo" src="https://static.thenounproject.com/png/778835-200.png" />
+      </div>
+    </div>
     <script src="script.js" async defer></script>
   </body>
 </html>

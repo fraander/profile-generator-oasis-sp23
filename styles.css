@@ -1,0 +1,76 @@
+/* Import Roboto from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+h1 {
+   display: run-in;
+   vertical-align: middle;
+   margin: 0px;
+}
+
+.bubble {
+  font-size: medium;
+  background-color: #45a049;
+  padding: 10px;
+  width: fit-content;
+  block-size: fit-content;
+  border-radius: 5px;
+  color: white;
+}
+
+label {
+  font-weight: 700; /* 400 is "normal", so set to 700 for a bolder label */
+}
+
+input,
+select {
+  /* Modify input and select tags */
+  width: 100%;
+  padding: 12px 20px; /* Use shorthand to do `height width` padding (inside space) */
+  margin: 0 0 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.no-border {
+  border: none;
+}
+
+input[type=submit] {
+   background: none;
+   background-color: #4caf50;
+   padding: 14px 20px;
+   color: white;
+	border: none;
+   border-radius: 4px;
+   margin: 8px 0;
+   font-weight: 900;
+   font-size: medium;
+	cursor: pointer;
+	outline: inherit;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+  text-shadow: 1px 1px 2px #2c7330;
+}
+
+*:required {
+  border-color: #4caf50;
+}
+
+.mock-bg {
+  padding: 0;
+  margin: 0 0 10px 0;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+div.group-box {
+  font-family: "Roboto", sans-serif; /* Set font for the entire div */
+  border-radius: 5px;
+  background-color: #f2f2f2; /* Set background color */
+  padding: 20px;
+  margin: 20px;
+}
