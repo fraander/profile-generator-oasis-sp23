@@ -24,7 +24,9 @@
               id="form-photo"
               name="form-photo"
               accept="image*"
-            />
+              onchange="updatePhoto(event)"
+              required
+              />
           </div>
 
           <label for="form-name">Name: </label>
@@ -42,36 +44,39 @@
             name="form-title"
             type="text"
             value="Director"
+            required
           />
 
           <label for="form-email">Email: </label>
-          <input id="form-email" name="form-email" type="email" />
+          <input id="form-email" name="form-email" type="email" required />
 
           <label for="form-phone">Phone: </label>
-          <input id="form-phone" name="form-phone" type="tel" />
+          <input id="form-phone" name="form-phone" type="tel" required />
 
           <label for="form-fun-fact">Fun Fact: </label>
-          <input id="form-fun-fact" name="form-fun-fact" type="text" />
+          <input id="form-fun-fact" name="form-fun-fact" type="text" required />
 
           <input type="submit" value="Generate!" />
         </form>
       </div>
 
-      <div class="center-content" style="padding: 0; margin: 0;">
-        <div class="output-container group-box">
+      <div class="center-content" style="padding: 0; margin: 0;" >
+        <div class="output-container group-box" id="output" style="display: none;">
           <div class="left-section">
-            <!-- image -->
-            <img id="photo-output" height="170px" src="placeholder.png" />
-            <h1 style="font-size: large; margin-bottom: -10px">
-              Nick Selvitelli
-            </h1>
-            <p style="font-size: small">Director of Oasis</p>
+            <img id="photo-output" height="170px" width="170px"></img>
+
+            <h1
+              style="font-size: large; margin-bottom: -10px"
+              id="name-output"
+            ></h1>
+
+            <p style="font-size: small" id="title-output"></p>
           </div>
 
           <div class="right-section">
-            <p>Email:<br />selvitelli.n@northeastern.edu</p>
-            <p>Phone:<br />+1(408) 805 - 9922</p>
-            <p>Fun Fact:<br />Eats his pasta with red sauce bare-handed on specific, important occasions.</p>
+            <p id="email-output"></p>
+            <p id="phone-output"></p>
+            <p id="fact-output"></p>
           </div>
         </div>
       </div>
