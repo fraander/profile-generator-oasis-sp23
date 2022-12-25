@@ -1,10 +1,14 @@
 /* Import Roboto from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+body {
+  font-family: "Roboto", sans-serif; /* Set font for the entire div */
+}
+
 h1 {
-   display: run-in;
-   vertical-align: middle;
-   margin: 0px;
+  display: run-in;
+  vertical-align: middle;
+  margin: 0px;
 }
 
 .bubble {
@@ -37,21 +41,21 @@ select {
   border: none;
 }
 
-input[type=submit] {
-   background: none;
-   background-color: #4caf50;
-   padding: 14px 20px;
-   color: white;
-	border: none;
-   border-radius: 4px;
-   margin: 8px 0;
-   font-weight: 900;
-   font-size: medium;
-	cursor: pointer;
-	outline: inherit;
+input[type="submit"] {
+  background: none;
+  background-color: #4caf50;
+  padding: 14px 20px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin: 8px 0;
+  font-weight: 900;
+  font-size: medium;
+  cursor: pointer;
+  outline: inherit;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
   text-shadow: 1px 1px 2px #2c7330;
 }
@@ -68,9 +72,29 @@ input[type=submit]:hover {
 }
 
 div.group-box {
-  font-family: "Roboto", sans-serif; /* Set font for the entire div */
   border-radius: 5px;
   background-color: #f2f2f2; /* Set background color */
   padding: 20px;
   margin: 20px;
+}
+
+.output-container {
+  display: grid;
+  align-items: top;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5px;
+  width: 400px;
+}
+
+.center-content {
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+
+   -ms-flex-align: center;
+   -webkit-align-items: center;
+   -webkit-box-align: center;
+
+   align-items: center;
+   justify-content: center;
 }
