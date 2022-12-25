@@ -6,7 +6,7 @@ function updatePage() {
   updatePhone();
   updateFact();
 
-  document.getElementById("output").style.display = "block";
+  document.getElementById("output").style.display = "flex";
 }
 
 // change when this is called (called when uploading photo right now)
