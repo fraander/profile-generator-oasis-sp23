@@ -1,6 +1,5 @@
 import "./App.css";
-import { useReducer, useState } from "react";
-import { wait } from "@testing-library/user-event/dist/utils";
+import { useState } from "react";
 
 export function App() {
   const [name, setName] = useState("");
@@ -9,13 +8,15 @@ export function App() {
   const [phone, setPhone] = useState("");
   const [fact, setFact] = useState("");
 
+  const [showOutput, setShowOutput] = useState(false);
+
   function handleSubmit(event) {
     // do something on submit of form
     event.preventDefault(); // stop submit from reloading the page
-    setOutput( "output was clicked!" );
+
+    setShowOutput( true );
   }
 
-  const [output, setOutput] = useState("");
 
   return (
     <div>
@@ -45,7 +46,9 @@ export function App() {
         <input type="submit" value="Generate!" />
       </form>
 
-      <h1>{output}</h1>
+      {showOutput &&
+        <div><h1>Show output!!</h1></div>
+      }
     </div>
   );
 }
