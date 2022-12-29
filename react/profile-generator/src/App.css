@@ -1,0 +1,15 @@
+div {
+  padding: 10px;
+}
+
+div.app {
+  margin: 10px;
+}
+
+div.input {
+  background-color: azure;
+}
+
+div.output {
+  background-color: green;
+}
