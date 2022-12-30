@@ -5,7 +5,7 @@ import Header from "./Header";
 import Form from "./Form";
 import Output from "./Output";
 
-export function App() {
+export default function App() {
   // input field values
   const [photo, setPhoto] = useState(null);
   const [name, setName] = useState("");
@@ -45,5 +45,3 @@ export function App() {
     </div>
   );
 }
-
-export default App;
