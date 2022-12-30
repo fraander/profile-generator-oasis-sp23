@@ -1,15 +1,83 @@
 div {
   padding: 10px;
-}
-
-div.app {
-  margin: 10px;
+  margin: 10px 0px;
+  border-radius: 10px;
+  background-color: #1e201a;
+  color: #edf0f1;
+  flex-flow: column;
 }
 
 div.input {
-  background-color: azure;
+  background-color: #2f4268;
+  box-shadow: 0 0 10px #455c89;
 }
 
 div.output {
-  background-color: green;
+  background-color: #487268;
+  box-shadow: 0 0 10px #689f92;
+  display: flex;
+  flex-flow: row;
+  margin-top: 20px;
+}
+
+div.column {
+  flex: 50%;
+  margin: 10px;
+  background-color: #a7cdbd;
+  color: #1e201a;
+}
+
+label {
+  font-weight: 700;
+}
+
+input {
+  border: 2px solid #dadada;
+  border-radius: 4px;
+  background: transparent;
+  color: #edf0f1;
+  margin: 5px 10px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+}
+
+input[type="submit"] {
+  background-color: #edf0f1;
+  color: #2f4268;
+  font-weight: 700;
+  font-size: larger;
+}
+
+input[type="file"] {
+  background: transparent;
+  border: transparent;
+}
+
+/* Import Roboto from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  font-family: "Roboto", sans-serif; /* Set font for the entire div */
+  line-height: 1.4rem;
+  font-size: 1rem;
+  background-color: #1e201a;
+}
+
+html,
+#root {
+  /* display: flex;
+  align-items: center;
+  justify-items: center;
+  width: max-content; */
+  flex: 1 0 100%;
+}
+
+img {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 160px;
+  height: 160px;
 }
